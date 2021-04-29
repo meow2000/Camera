@@ -1,6 +1,7 @@
-package hust.soict.hedspi.model.dovat;
+package main.java.hust.soict.hedspi.model.camera;
 
-import hust.soict.hedspi.model.hhcn.ToaDo;
+import main.java.hust.soict.hedspi.model.dovat.DoVat;
+import main.java.hust.soict.hedspi.model.toado.ToaDo;
 
 public class Camera {
     private ToaDo toaDo;

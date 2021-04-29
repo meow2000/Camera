@@ -1,4 +1,4 @@
-package hust.soict.hedspi.model.hhcn;
+package main.java.hust.soict.hedspi.model.toado;
 
 public class ToaDo {
     private double x;

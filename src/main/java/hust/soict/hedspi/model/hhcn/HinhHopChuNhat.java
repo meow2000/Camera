@@ -1,4 +1,7 @@
-package hust.soict.hedspi.model.hhcn;
+package main.java.hust.soict.hedspi.model.hhcn;
+
+import main.java.hust.soict.hedspi.model.matphang.MatPhang;
+import main.java.hust.soict.hedspi.model.toado.ToaDo;
 
 public class HinhHopChuNhat {
     private ToaDo[] toaDoCacDinh = new ToaDo[8];

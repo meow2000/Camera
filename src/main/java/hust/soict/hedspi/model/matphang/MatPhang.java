@@ -1,4 +1,6 @@
-package hust.soict.hedspi.model.hhcn;
+package main.java.hust.soict.hedspi.model.matphang;
+
+import main.java.hust.soict.hedspi.model.toado.ToaDo;
 
 public class MatPhang {
     private ToaDo vectorPhapTuyen;
@@ -9,5 +11,5 @@ public class MatPhang {
         this.diemThuoc = diemThuoc;
     }
 
-    // TO DO: getter, setter
+    // getter, setter
 }

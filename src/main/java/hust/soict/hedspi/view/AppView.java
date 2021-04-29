@@ -1,10 +1,10 @@
-package hust.soict.hedspi.view;
+package main.java.hust.soict.hedspi.view;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import hust.soict.hedspi.enums.Option;
-import hust.soict.hedspi.model.room.Room;
+import main.java.hust.soict.hedspi.enums.Option;
+import main.java.hust.soict.hedspi.model.room.Room;
 
 public class AppView {
 

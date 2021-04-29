@@ -1,7 +1,7 @@
-package hust.soict.hedspi.model.dovat;
+package main.java.hust.soict.hedspi.model.dovat;
 
-import hust.soict.hedspi.model.hhcn.HinhHopChuNhat;
-import hust.soict.hedspi.model.hhcn.ToaDo;
+import main.java.hust.soict.hedspi.model.hhcn.HinhHopChuNhat;
+import main.java.hust.soict.hedspi.model.toado.ToaDo;
 
 public class DoVat extends HinhHopChuNhat {
     private String ten;

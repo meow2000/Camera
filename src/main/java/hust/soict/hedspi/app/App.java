@@ -1,9 +1,9 @@
-package hust.soict.hedspi.app;
+package main.java.hust.soict.hedspi.app;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import hust.soict.hedspi.model.room.Room;
+import main.java.hust.soict.hedspi.model.room.Room;
 
 public class App {
     

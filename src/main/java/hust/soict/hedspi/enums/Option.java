@@ -1,4 +1,4 @@
-package hust.soict.hedspi.enums;
+package main.java.hust.soict.hedspi.enums;
 
 public enum Option {
     TAO_PHONG,

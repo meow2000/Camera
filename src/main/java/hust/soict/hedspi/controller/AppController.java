@@ -1,14 +1,14 @@
-package hust.soict.hedspi.controller;
+package main.java.hust.soict.hedspi.controller;
 
 import java.util.Map;
 
-import hust.soict.hedspi.app.App;
-import hust.soict.hedspi.enums.Option;
-import hust.soict.hedspi.model.dovat.Camera;
-import hust.soict.hedspi.model.dovat.DoVat;
-import hust.soict.hedspi.model.hhcn.ToaDo;
-import hust.soict.hedspi.model.room.Room;
-import hust.soict.hedspi.view.AppView;
+import main.java.hust.soict.hedspi.app.App;
+import main.java.hust.soict.hedspi.enums.Option;
+import main.java.hust.soict.hedspi.model.camera.Camera;
+import main.java.hust.soict.hedspi.model.dovat.DoVat;
+import main.java.hust.soict.hedspi.model.room.Room;
+import main.java.hust.soict.hedspi.model.toado.ToaDo;
+import main.java.hust.soict.hedspi.view.AppView;
 
 public class AppController {
 
@@ -92,12 +92,16 @@ public class AppController {
             (ToaDo) userData.get("dinhC"),
             (double) userData.get("chieuCao")
         );
-
+        
         if (doVat == null) {
             this.view.thongBao("error", "failed to create do vat");
-        } else {
-            this.app.currentRoom.themDoVat(doVat);
+            return;
+        }
+        
+        if (this.app.currentRoom.themDoVat(doVat)){
             this.view.thongBao("notice", "create do vat is successfully");
+        } else {
+            this.view.thongBao("error", "vi tri do vat khong hop le");
         }
     }
 
@@ -112,9 +116,13 @@ public class AppController {
 
         if (camera == null) {
             this.view.thongBao("error", "failed to create camera");
-        } else {
-            this.app.currentRoom.themCamera(camera);;
+            return;
+        }
+        
+        if (this.app.currentRoom.themCamera(camera)) {
             this.view.thongBao("notice", "create camera is successfully");
+        } else {
+            this.view.thongBao("notice", "vi tri camera khong hop le");
         }
     }
 

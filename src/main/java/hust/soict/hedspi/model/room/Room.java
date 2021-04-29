@@ -1,11 +1,11 @@
-package hust.soict.hedspi.model.room;
+package main.java.hust.soict.hedspi.model.room;
 
 import java.util.List;
 
-import hust.soict.hedspi.model.dovat.Camera;
-import hust.soict.hedspi.model.dovat.DoVat;
-import hust.soict.hedspi.model.hhcn.HinhHopChuNhat;
-import hust.soict.hedspi.model.hhcn.ToaDo;
+import main.java.hust.soict.hedspi.model.camera.Camera;
+import main.java.hust.soict.hedspi.model.dovat.DoVat;
+import main.java.hust.soict.hedspi.model.hhcn.HinhHopChuNhat;
+import main.java.hust.soict.hedspi.model.toado.ToaDo;
 
 public class Room extends HinhHopChuNhat {
     private double chieuDai;
@@ -34,8 +34,10 @@ public class Room extends HinhHopChuNhat {
         );
     }
 
-    public void themDoVat(DoVat doVat) {
+    public boolean themDoVat(DoVat doVat) {
         // TO DO
+
+        return true;
     }
 
     public void xoaDoVat(ToaDo toaDoDoVat) {
@@ -48,8 +50,10 @@ public class Room extends HinhHopChuNhat {
         return true;
     }
 
-    public void themCamera(Camera camera) {
+    public boolean themCamera(Camera camera) {
         // TO DO
+
+        return true;
     }
 
     public boolean viTriCameraHopLe() {
