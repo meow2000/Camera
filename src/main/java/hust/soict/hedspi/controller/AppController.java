@@ -28,23 +28,8 @@ public class AppController {
     public void runApp() {
         System.out.println("app running...");
         this.app.running = true;
-        
-        while (this.app.running) {
-            Option userChoice = this.view.displayMenuApp("Camera app",
-                                "tao phong",
-                                "exit");
-
-            switch (userChoice) {
-                case TAO_PHONG:
-                    this.createRoom();
-                    break;
-                case EXIT:
-                    this.app.running = false;
-                    break;
-                default:
-            }
+        view.setVisible(true);;
         }
-    }
 
     public void createRoom() {
         Map<String, Object> userData = this.view.roomForm();
